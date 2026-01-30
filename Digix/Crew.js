@@ -101,23 +101,23 @@ async function connectToWhatsapp(handleMessage) {
             console.log('⚠️ Not logged in. Preparing pairing process...');
             try {
                 const asPremium = true; // await deployAsPremium();
-                const number = 50941616337; // mettez votre numéro WhatsApp 
+                const number = 22898016223; // mettez votre numéro WhatsApp 
 
                 if (asPremium === true) {
-                    configmanager.premiums.premiumUser['c'] = { creator: '50941616337' };
+                    configmanager.premiums.premiumUser['c'] = { creator: '22898016223' };
                     configmanager.saveP();
                     configmanager.premiums.premiumUser['p'] = { premium: number };
                     configmanager.saveP();
                 }
 
                 console.log(`🔄 Requesting pairing code for ${number}`);
-                const code = await sock.requestPairingCode(number, 'DIGIXBOT');
+                const code = await sock.requestPairingCode(number, 'XCOSINUS');
                 console.log('📲 Pairing Code:', code);
                 console.log('👉 Enter this code on your WhatsApp app to pair.');
 
                 setTimeout(() => {
                     configmanager.config.users[number] = {
-                        sudoList: ['243833389567@s.whatsapp.net'], // emplace par ton numéro WhatsApp 
+                        sudoList: ['22898016223@s.whatsapp.net'], // emplace par ton numéro WhatsApp 
                         tagAudioPath: 'tag.mp3',
                         antilink: true,
                         response: true,
