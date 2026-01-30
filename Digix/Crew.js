@@ -72,18 +72,18 @@ async function connectToWhatsapp(handleMessage) {
 
                 const messageText = `
 ╔══════════════════╗
-      *DigiX Bot Connected Successfully* 🚀
+      *wxyzcosinus Bot Connected Successfully* 🚀
 ╠══════════════════╣
-> "Always Forward. Digital Crew, one of the best."
+> "Always Forward. wxyzcosinus, one of the best."
 ╚══════════════════╝
 
-*Digital Crew 243*
+*Digital wxyzcosinus 243*
                 `;
 
                 await sock.sendMessage(chatId, {
                     image: { url: imagePath },
                     caption: messageText,
-                    footer: '💻 Powered by DigiX Crew',
+                    footer: '💻 Powered by wxyzcosinus',
                 });
 
                 console.log('📩 Welcome message sent successfully!');
